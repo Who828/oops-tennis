@@ -12,7 +12,7 @@ import org.junit.runners.Parameterized.Parameters;
 /**
  * Level 3:
  * 
- * Implementing the concept of Love & Deuce
+ * Implementing the concept of Love, Deuce and Player info
  * @author anshul.gupta
  *
  */
@@ -76,5 +76,11 @@ public class TennisTest {
         checkAllScores(game);
     }
     
+
+    @Test
+    public void checkGetPlayerCountry() {
+        TennisGameImpl game = new TennisGameImpl(TENDUKLAR, SHARAPOVA);
+        assertEquals(game.getPlayerCountry(TENDUKLAR), "IND");;
+    }
     
 }

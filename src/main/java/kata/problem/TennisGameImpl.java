@@ -14,4 +14,8 @@ public class TennisGameImpl implements TennisGame {
         return null;
     }
 
+    public String getPlayerCountry(String playerName) {
+        return null;
+    }
+
 }
